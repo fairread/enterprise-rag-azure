@@ -36,7 +36,7 @@ if not exist "..\\frontend\\node_modules" (
 :MENU
 cls
 echo ======================================================
-echo  ENTERPRISE MULTIMODAL RAG - ASSESSMENT SUITE
+echo  ENTERPRISE RAG - ASSESSMENT SUITE
 echo ======================================================
 echo  Current Mode: Local Virtual Environment (.venv)
 echo ======================================================

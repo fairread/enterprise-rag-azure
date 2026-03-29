@@ -1,7 +1,7 @@
-# Azure Enterprise Multimodal RAG
+# Azure Enterprise RAG
 
 ## Problem Context & Objectives
-Enterprises often struggle with fragmented knowledge silos across SharePoint, legacy databases, and email streams. This project provides a secure, production-grade **Multimodal RAG** architecture designed to bridge these silos using **Azure OpenAI (GPT-4o)** and **Azure AI Search**. Our objectives are to ensure semantic precision with citations, enforce zero-trust security, and provide a frictionless local evaluation experience for auditing complex financial and technical documents.
+Enterprises often struggle with fragmented knowledge silos across SharePoint, legacy databases, and email streams. This project provides a secure, production-grade **Enterprise RAG** architecture designed to bridge these silos using **Azure OpenAI (GPT-4o)** and **Azure AI Search**. Our objectives are to ensure semantic precision with citations, enforce zero-trust security, and provide a frictionless local evaluation experience for auditing complex financial and technical documents.
 
 ## Table of Contents
 1. [Architecture](#architecture)
@@ -38,7 +38,7 @@ graph TD
     subgraph RAG Application (React + FastAPI)
         REACT[React UI - shadcn/ui]
         FASTAPI[FastAPI Server]
-        LLM[Azure OpenAI GPT-4o Vision]
+        LLM[Azure OpenAI GPT-4o]
         ENTRA[Microsoft Entra ID]
         KV[Azure Key Vault]
     end
@@ -155,7 +155,7 @@ Standardized **Kubernetes Probes** (`/api/healthz`) validate liveness of Azure O
 ### Usage Guide
 1. Select a mode from the **Unified Assessment Menu** (e.g., **[FULL-STACK DEMO]**).
 2. Navigate to `http://localhost:5173`.
-3. **Multimodal Analysis:** Drag and drop the provided `Sample_Balance_Sheet.pdf` or an image into the chat and ask: *"Compare the assets in this sheet against Q3 revenue."*
+3. **Knowledge Retrieval:** Drag and drop the provided `Sample_Balance_Sheet.pdf` or a document into the chat and ask: *"Summarize the assets in this sheet."*
 4. **Audit Review:** Observe JSON logs and PII redaction in the backend terminal real-time.
 
 ---

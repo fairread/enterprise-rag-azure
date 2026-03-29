@@ -17,7 +17,7 @@ logging.basicConfig(
 )
 audit_logger = logging.getLogger("EnterpriseAudit")
 
-app = FastAPI(title="Enterprise Multimodal RAG API")
+app = FastAPI(title="Enterprise RAG API")
 
 app.add_middleware(
     CORSMiddleware,

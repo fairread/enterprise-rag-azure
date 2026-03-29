@@ -1,5 +1,5 @@
 {
-  "name": "enterprise-multimodal-rag-azure",
+  "name": "enterprise-rag-azure",
   "private": true,
   "version": "0.0.0",
   "type": "module",
