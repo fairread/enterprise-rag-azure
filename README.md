@@ -18,24 +18,24 @@ Enterprises often struggle with fragmented knowledge silos across SharePoint, le
 
 ```mermaid
 graph TD
-    subgraph Data Sources
+    subgraph "Data Sources"
         SP[SharePoint Docs & Local Files]
         OS[Live Open-Source APIs]
         DB[QA Records DB]
     end
 
-    subgraph Azure Data Platform
+    subgraph "Azure Data Platform"
         ADF[Azure Data Factory]
         ADLS[ADLS Gen2 / Blob Storage]
         FUNC[Functions - Text & Image Extractor]
     end
 
-    subgraph AI Indexing & Search
+    subgraph "AI Indexing & Search"
         EMB[Azure Multimodal Embeddings]
         SEARCH[(Azure AI Search)]
     end
 
-    subgraph RAG Application (React + FastAPI)
+    subgraph "RAG Application (React + FastAPI)"
         REACT[React UI - shadcn/ui]
         FASTAPI[FastAPI Server]
         LLM[Azure OpenAI GPT-4o]
